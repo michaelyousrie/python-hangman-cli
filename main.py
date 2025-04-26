@@ -19,6 +19,7 @@ def main():
         display_divider()
         for line in hangman.draw_hangman(stage):
             print(line)
+        #endfor
         display_divider()
     #enddef
 
@@ -73,7 +74,6 @@ def main():
                 clear_terminal()
                 print("You've won the game!!")
                 break
-                #endif
             #endif
         #endwhile
     #enddef
@@ -83,6 +83,7 @@ def main():
         except KeyboardInterrupt:
             print("Have a nice day!")
             exit()
+        #endtry
 
         if (play_again == 'Y' or play_again == 'YES'):
             start_game()
